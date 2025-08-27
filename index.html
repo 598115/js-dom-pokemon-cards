@@ -8,9 +8,43 @@
     <script defer src="/src/index.js"></script>
   </head>
   <body>
-    <h1>Pokemon Trading Cards</h1>
+    <img src="logo.png" class="header-image"></img>
     <ul class="cards">
       <!-- Look at /templates/card.html for the template of a card -->
     </ul>
+    
   </body>
+  <template id = "card-template">
+          <li class="card">
+            <h2 class="card--title">Bulbasaur</h2>
+            <img
+              width="256"
+              class="card--img"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+            />
+
+            <h4 class="image-name"></h4>
+            <!---
+              <div class="gen-choice">
+                <button class="gen-default">Default</button> <button class="gen-gen1">Gen 1</button>
+              </div>
+            --->
+              <div class="image-buttons">
+                <p class="image-selection-header">Image selection</p>
+                <button class="previous-image">Previous</button> <button class="next-image">Next</button>
+              </div>
+            <ul class="card--text">
+              <li>HP: 45</li>
+              <li>ATTACK: 49</li>
+              <li>DEFENSE: 49</li>
+              <li>SPECIAL-ATTACK: 65</li>
+              <li>SPECIAL-DEFENSE: 65</li>
+              <li>SPEED: 45</li>
+                <div class="games-box">
+                <p class="games-header">Appears in:</p>
+                <ul class="games"></ul>
+                </div>
+            </ul>
+          </li>
+    </template>
 </html>

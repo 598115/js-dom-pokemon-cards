@@ -5,22 +5,97 @@
 html,
 body {
   margin: 0;
+  background-color: rgb(187, 222, 236);
+}
+
+.header-image {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0 0 0;
+  max-width: 500px;
+}
+
+.games-header {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.gen-choice {
+  gap: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.image-buttons {
+  text-align: center;
+}
+
+.previous-image {
+  gap: 0.5rem;
+  margin: 1rem;
+  background: linear-gradient(to right, #ffb6b6bd, #e68282); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s; 
+}
+
+.next-image {
+  gap: 0.5rem;
+  margin: 1rem;
+  background: linear-gradient(to right, #beffafbd, #42c437); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s; 
+}
+
+.image-selection-header {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  font-family: 'Trebuchet MS';
+}
+
+
+.next-image:hover, .previous-image:hover {
+transform: scale(1.05);
 }
 
 body {
-  display: grid;
-  grid-template-columns: minmax(300px, 1200px);
+  display: grid;;
+  grid-template-columns: minmax(300px, 4000px);
   justify-content: center;
 
   height: 100vh;
   font-family: sans-serif;
 }
 
+.image-name {
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.games {
+  list-style: disc;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+  columns: 2;
+}
+
+.games-box {
+  margin-top: 1rem;
+  background-color: lightyellow;
+}
+
 img {
   max-width: 100%;
 }
 
-h1,
+h1 {
+  text-align: center;
+  border: 5px solid;
+  border-color: brown;
+}
 h2 {
   text-align: center;
 }
@@ -31,6 +106,8 @@ h2 {
   gap: 15px;
   justify-content: center;
   justify-items: center;
+  list-style: none;
+ 
 
   padding: 2rem 0;
   margin-bottom: 2rem;
@@ -39,6 +116,7 @@ h2 {
 .card {
   width: 100%;
   justify-self: center;
+  background-color: antiquewhite;
 
   border: 1px solid #252525;
   border-radius: 8px;
@@ -52,10 +130,10 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
 .card--text {
   margin: 0.2rem;
   padding: 1rem;
-
   border-radius: 5px;
 }
 
